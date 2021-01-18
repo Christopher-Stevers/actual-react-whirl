@@ -1,0 +1,38 @@
+:root{color:#121418
+#386324
+#70b64f
+#e2f9cd
+#aa6c54}
+
+.wrapper{
+    background-color:#70b64f;
+    height: 10vh;
+    color:#121418;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+}
+    *{color: inherit}
+    a{
+        width: 100%;
+        height: 10vh;
+        line-height: 10vh;
+        display: inline-block;
+        text-align: center;
+    }
+    #shop{
+        background-color: #aa6c54;
+        color:#e2f9cd;
+
+        
+    }
+    #shop:hover{
+        
+        background-color:#121418;
+    }
+    a:hover{
+        background-color:#121418;
+        color:#e2f9cd;
+    }
+    

@@ -1,0 +1,36 @@
+*{
+    box-sizing: border-box;
+    outline: 0px;
+    margin:0px;
+    padding: 0px;
+}
+
+.Product{
+    outline: none;
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    border: 10px solid black;
+    background-size: contain;
+    display: grid;
+    align-content: end;
+    overflow: hidden;
+
+}
+.data{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    height: 25px;
+    background-color: yellow;
+    align-self: end;
+    border: 0px;
+}
+.productButton{
+    width: 100%;
+    height: 25px;
+    align-self: end;
+    border: 0px;
+}
