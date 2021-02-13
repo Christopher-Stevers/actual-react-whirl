@@ -1,0 +1,48 @@
+
+.flexContainer{
+    display: flex;
+    width: 80%;
+    margin: 10%;
+    justify-content: space-between;
+    *{
+    margin: 0 1% 10px 0;
+    }
+    @media screen and(max-width: 500px){
+       
+    margin: 0 1% 0px 5%;
+        max-width: 100%;
+    }
+    flex-wrap: wrap;
+}
+.contactWrapper{
+    margin-left: 20px;
+}
+.explainer{
+    
+    display: grid;
+    min-width: 400px;
+    max-width: 100%;
+    min-height: 50vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    justify-content: space-between;
+    *{max-width: 400px;}
+    
+    flex: 1;
+    @media screen and (max-width: 500px){
+        display: block;
+        margin: 0px;
+        width: auto;
+        min-width: 200px;
+    }
+
+}
+.h2{
+    
+    text-align: start;
+    font-size: 3rem;
+    font-weight: 400;
+    
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+}

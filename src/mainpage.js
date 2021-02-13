@@ -2,13 +2,13 @@ import Navbar from './Components/Navbar';
 import Header from './Components/Header';
 import Body from './Components/body';
 import Footer from './Components/footer';
-import './Components/Navbar.css';
+import style from './mainpage.module.scss'
 function Mainpage() {
   return (
     <div className="App">
-      <Header />
+      <Header title="Whirl Creek Farm"/>
       <Navbar />
-      <div class='flex'><Body /><img src="https://cdn.discordapp.com/attachments/515327418366427136/799740846274510848/IMG_1861.JPG" alt='cow'></img></div>
+      <Body />
       <Footer />
     </div>
   );

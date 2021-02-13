@@ -1,0 +1,66 @@
+@import './App.scss';
+.section{
+    display: flex;
+    flex-wrap: wrap;
+   
+}
+.shopContainer{
+    max-width: 100%;
+     margin-top:5vh;
+    @media all and (min-width: 450px) {
+     max-width: 80%;
+    }
+}
+.grid{
+    display: inline-grid;
+    grid-template-columns: 1fr;
+    justify-content:  center;
+    justify-items: center;
+}
+.sticky{
+    
+    width: 100%;
+    height: 20vh;
+    position: sticky;
+    top: 0px;
+    z-index: 10;
+    @media screen and (max-width: 500px){position: fixed;
+}
+    
+}
+.wrapper{
+    background-color: $complement;
+    height: 10vh;
+    color: $darkText;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    width: 75%;
+    font-size: 1.25rem;
+    @media screen and(max-width: 500px){
+        width: 100%;
+        grid-template-columns: 1fr;
+        height: 40vh;
+        
+        
+    }
+    align-items: center;
+
+}
+.x{
+    line-height: 10vh;
+        display: none;
+    text-align: center;
+    color:$lightText;
+    background-color: $darkText;
+    text-decoration: none;
+    font-size: 2rem;
+    @media screen and (max-width: 500px){
+    display: block;
+    }
+}
+.h2{text-align: start;
+    height: 10vh;
+    font-size: 3rem;
+    font-weight: 400;
+    margin:5vh 5% 5vh 2.5%;
+}

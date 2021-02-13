@@ -1,0 +1,69 @@
+
+@import'../App.scss';
+
+
+.wrapper{
+    background-color: $complement;
+    height: 10vh;
+    color: $darkText;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    font-size: 1.5rem;
+    @media screen and(max-width: 500px){
+        grid-template-columns: 1fr;
+        height: 40vh;
+        
+        
+    }
+    align-items: center;
+
+}
+
+    .link{
+    background-color: $lightMain;
+        width: 100%;
+        height: 10vh;
+        line-height: 10vh;
+        display: inline-block;
+        text-align: center;
+        color: $darkText;
+        text-decoration: none;
+    }
+    .shopButton{
+        line-height: 10vh;
+        display: block;
+        text-align: center;
+        color:$lightText;
+        text-decoration: none;
+    }
+    .shopButton:hover{
+        
+        background-color:$darkText;
+        color:#e2f9cd;
+    }
+
+    .link:hover{
+        background-color:$darkText;
+        color:#e2f9cd;
+    }
+    .cartButton{
+        display: flex;
+        align-items: center;
+        position: relative;
+        &:hover{background-color: $complement;
+            cursor: pointer;
+        }
+           
+        
+        }
+        .cart{
+        background-color: $lightMain;
+        padding: 20px;
+        height: 10vh;
+        flex: 1;
+        &:hover{background-color: $complement;
+        }
+        div{
+        text-align: center;
+    flex: 2;}
+    }

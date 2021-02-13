@@ -1,7 +1,7 @@
-import './Header.css';
-function Header() {
-    return (<div className='background'>
-        <h1>Whirl Creek Farm</h1>
+import style from './Header.module.scss';
+function Header(props) {
+    return (<div className={style.background} >
+        <h1 className={style.h1}>{props.title}</h1>
         </div>
     );
   }

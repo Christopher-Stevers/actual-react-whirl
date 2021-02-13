@@ -1,0 +1,101 @@
+@import'../App.scss';
+.wrapper{
+    padding: 2%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 90%;
+    margin: 10vh 5%;
+    height: 80vh;
+    background-color: white;
+    display: grid;
+    justify-content: center;
+    grid-template-rows: 20vh 1fr;
+    border-radius: 100px;
+    @media screen and (max-width: 500px) {
+        border-radius: 40px;
+    }
+    z-index: 1;
+    
+    *{
+        z-index: 1;
+        *{
+            z-index: 1;}}
+    
+}
+.overlay{
+    background-color: black;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+opacity: .5;}
+.h2{
+    height: 10vh;
+    font-size: 3rem;
+    font-weight: 400;
+    margin:5vh 5% 5vh 2.5%;
+}
+.ul{
+    position: relative;
+        overflow-y: scroll;
+        justify-items: space-between;
+    @media screen and (min-width: 2px){
+        display: grid;
+        width: 75vw;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        grid-template-rows: repeat(auto-fill, 50px);
+        overflow-y: visible;
+    
+        .li{
+            border-radius: 100px;
+            padding: 0px 8px;
+            max-width: 80%;
+
+            border: 2px solid #777777;
+        flex-grow: 1;
+        list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    width: 300px;
+    min-width: min-content;
+    margin: 5px;
+    span{font-size: 1.25rem;
+    
+        min-width: min-content;}}
+    }
+}
+.label{
+    font-size: 1.25rem;
+}
+.input{ border-radius: 5px;
+    border-color: #777777;
+    font-size: 1rem;
+    max-height: 1.5rem;
+    padding: 3px;
+max-width: 200px;
+margin: 5px;}
+.fullModal{
+    
+    top: 0px;
+    left: 0px;
+    position: fixed;
+}
+.buy{
+    padding: 0px 10px;
+    @media screen and (max-width: 500px){padding: 2% 5%;}
+    
+    margin: 15px;
+    font-size: 1.5em;
+    border-radius: 5px;
+    border:solid #777777 4px;
+    border-radius: 20px;
+    max-width: 200px;
+    justify-self: center;
+    &:hover{background-color: #dddddd;
+    }
+}
+.form{display: grid;
+grid-template-rows: auto auto auto;}

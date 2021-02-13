@@ -1,0 +1,80 @@
+@import'../App.scss';
+.form{
+    display: grid;
+    width: 100%;
+    min-height: 50vh;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: .15fr .15fr .15fr .25fr ;
+    grid-template-areas: "a a"
+    "b c"
+    "d ."
+    "e e"
+    "f f"
+    "g ."
+    ;
+    *{
+        margin-right: 20px;
+    }
+    @media screen and (max-width: 475px){
+        display: block;
+        margin: 0px;
+        width: auto;
+        *{
+            width: auto;
+        }
+    }
+    min-width: 50%;
+    
+}
+.flexChild{
+    justify-self: start;
+
+    flex: 1;
+}
+.message{
+    grid-area: e;
+}
+
+
+.send{
+    width: 50px;
+    grid-area: f;
+}
+.flexInput{display: flex;
+justify-content: space-between;
+padding-right: 25px;
+width: 100%;
+@media screen and (max-width: 500px){
+    padding-right: 10px;
+    width: 200px;
+    input{
+        width: 50%;
+    }
+    
+}}
+
+.textArea{
+    border:1px solid $darkText;
+    width: 75%;
+    height: 200px;
+    margin: 5px;
+
+}
+.header{
+    grid-area: a;
+    text-align: start;
+    font-size: 3rem;
+    font-weight: 400;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+}
+.send{
+    padding: 10px;
+    width: min-content;
+    border-radius: 10px;
+    background-color: $darkText;
+    &:hover{background-color: $main;
+    cursor: pointer;}
+    color: white;
+    border: none;
+}

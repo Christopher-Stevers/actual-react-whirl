@@ -1,0 +1,31 @@
+$darkText: #121418;
+$main: #1d3014;
+$lightMain: #70b64f;
+$lightText:#e2f9cd;
+$complement: #aa6c54;
+$box-shadow: #777777;
+*{
+    box-sizing: border-box;
+    outline: 0px;
+    margin:0px;
+    padding: 0px;
+    border: 0px;
+    color: inherit;
+    scroll-behavior: smooth;
+    font-size: inherit;
+}
+body{
+    overflow: scroll;
+    color:inherit;
+}
+html{
+    scroll-padding-top: 20vh;
+}
+a:visited {
+    color: inherit;
+  }
+  input{
+      border: 1px solid $darkText;
+      border-radius:  1px;
+  }
+  button{&:hover{cursor: pointer;}}
