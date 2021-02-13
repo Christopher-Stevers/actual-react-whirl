@@ -8,29 +8,34 @@
 .Product{
     outline: none;
     width: 200px;
-    height: 200px;
+    height: 300px;
     margin: 20px;
     border: 10px solid black;
     background-size: contain;
     display: grid;
     align-content: end;
     overflow: hidden;
+    background-repeat: no-repeat;
+    
 
+}
+p{
+    background-color: aqua;
 }
 .data{
     display: flex;
     justify-content: space-between;
-    width: 100%;
+    width: calc(100%+2px);
     position: relative;
-    overflow: hidden;
-    height: 25px;
+    height: 50px;
     background-color: yellow;
     align-self: end;
     border: 0px;
+    overflow: hidden;
 }
 .productButton{
     width: 100%;
-    height: 25px;
+    height: 50px;
     align-self: end;
     border: 0px;
 }

@@ -1,5 +1,5 @@
 
-import './products.css';
+import './products.module.scss';
 function Product(props) {
     const passedStyles = {
         backgroundImage: `url( ${props.background} )`,
