@@ -2,7 +2,7 @@
 import style from './cartModal.module.scss';
 import {  useContext } from "react";
 import { CartContext } from "./context";
-import { BrowserRouter as Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import emailjs from 'emailjs-com';
 
 function Cart() {

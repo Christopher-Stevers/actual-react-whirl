@@ -1,10 +1,12 @@
 import style from './Navbar.module.scss';
-import { BrowserRouter as  Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import Cart from './cartModal.js'
 import { useState } from 'react';
 function Navbar() {
     const [cartOpen, updateCartOpen]=useState(false);
-    const showModal=()=>{(cartOpen)?updateCartOpen(false):updateCartOpen(true)};
+    const showModal=(e)=>{
+        e.stopPropagation();
+        (cartOpen)?updateCartOpen(false):updateCartOpen(true)};
 
     return (<div className={style.wrapper} >
         <Link className= {style.link} to="/">Home</Link>

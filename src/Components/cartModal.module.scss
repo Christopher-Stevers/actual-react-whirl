@@ -1,11 +1,12 @@
 @import'../App.scss';
+*{box-sizing: border-box;}
 .wrapper{
     padding: 2%;
     position: fixed;
     top: 0px;
     left: 0px;
-    width: 90%;
-    margin: 10vh 5%;
+    width: 80%;
+    margin: 10vh 10%;
     height: 80vh;
     background-color: white;
     display: grid;
@@ -43,7 +44,7 @@ opacity: .5;}
         justify-items: space-between;
     @media screen and (min-width: 2px){
         display: grid;
-        width: 75vw;
+        width: 70vw;
         grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
         grid-template-rows: repeat(auto-fill, 50px);
         overflow-y: visible;

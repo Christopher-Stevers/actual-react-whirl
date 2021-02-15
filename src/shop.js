@@ -19,7 +19,7 @@ const toggle=()=>{isClosed?updateIsClosed(false): updateIsClosed(true)};
                 <a className={navbarStyle.shopButton} href="#Beef">Beef</a>
                 <a className={navbarStyle.shopButton} href="#Pork">Pork</a>
                 <a href="#Grains" className={navbarStyle.shopButton}>Grains</a>
-                </div></div>: <svg role="button" id="icon" onClick={toggle} width="55" height="45">
+                </div></div>: <svg className={style.svg}role="button" id="icon" onClick={toggle} width="55" height="45">
             <rect width="35" height="5" y="10" x="10" fill="black" />
             <rect width="35" height="5" y="20" x="10" fill="black" />
             <rect width="35" height="5" y="30" x="10" fill="black" />
