@@ -1,12 +1,10 @@
 
 import style from './cartModal.module.scss';
-import { createContext, useEffect, useContext } from "react";
-import cartContext from "./context"
+import {  useContext } from "react";
 import { CartContext } from "./context";
-import { BrowserRouter as Router, Route, Switch, Link, Redirect } from 'react-router-dom';
+import { BrowserRouter as Link } from 'react-router-dom';
 import emailjs from 'emailjs-com';
 
-import {v4 as uuidv4} from "uuid";
 function Cart() {
     const { Cart } = useContext(CartContext);
     console.log(Cart);

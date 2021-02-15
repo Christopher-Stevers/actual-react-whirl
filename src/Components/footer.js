@@ -1,6 +1,6 @@
 import style from  './footer.module.scss';
 
-import { BrowserRouter as Router, Route, Switch, Link, Redirect } from 'react-router-dom';
+import { BrowserRouter as Link} from 'react-router-dom';
 function Footer() {
     return (
       <div className={style.footwrapper}>

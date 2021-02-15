@@ -1,11 +1,10 @@
 
 import style from './products.module.scss';
-import cartContext from './context';
 import React, { useContext } from 'react'
 import { CartContext } from './context';
 import { v4 as uuidv4 } from 'uuid';
 
-import { useEffect, useState } from "react";
+import {  useState } from "react";
 function Product(props) {
     const passedStyles = {
         backgroundImage: `url( ${props.background} )`,
@@ -14,7 +13,6 @@ function Product(props) {
     const Context = useContext(CartContext);
     const { Cart } = useContext(CartContext);
     const [quantity, upDateQuantity] = useState(0);
-    const [isZero, updateIsZero] = useState(0);
 
     const changeQuant = (e) => {
 
@@ -29,6 +27,7 @@ function Product(props) {
                         quantity: e.target.value
                     }
                 }
+                else return null;
 
             }));
         
@@ -36,7 +35,6 @@ function Product(props) {
     const addFirstIngredient = () => {
         addIngredient();
 
-        updateIsZero(false);
 
     }
     const addIngredient = () => {

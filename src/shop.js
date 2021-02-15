@@ -4,10 +4,9 @@ import Products from './Components/products';
 import Header from './Components/Header';
 import navbarStyle from './Components/Navbar.module.scss';
 import Footer from './Components/footer'
-import { BrowserRouter as Router, Route, Switch, Link, Redirect } from 'react-router-dom';
 import { useState } from 'react';
 function Shop() {
-const [isSmoll, updateIsSmoll]=useState(window.matchMedia("(max-width: 500px)").matches);
+const [isSmoll]=useState(window.matchMedia("(max-width: 500px)").matches);
 const [isClosed, updateIsClosed]=useState(true);
 console.log(isSmoll);
 const toggle=()=>{isClosed?updateIsClosed(false): updateIsClosed(true)};

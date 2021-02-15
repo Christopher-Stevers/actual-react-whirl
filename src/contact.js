@@ -2,10 +2,7 @@ import Navbar from './Components/Navbar';
 import Header from './Components/Header';
 import Footer from './Components/footer';
 import Form from './Components/form'
-import style from './contactpage.module.scss'
-import cartContext from "./Components/context"
-import ContextProvider from "./Components/context"
-import { createContext, useEffect, useContext } from "react";
+import style from './contactpage.module.scss';
 
 function ContactPage() {
   return (

@@ -1,5 +1,5 @@
 import style from './Navbar.module.scss';
-import { BrowserRouter as Router, Route, Switch, Link, Redirect } from 'react-router-dom';
+import { BrowserRouter as  Link } from 'react-router-dom';
 import Cart from './cartModal.js'
 import { useState } from 'react';
 function Navbar() {

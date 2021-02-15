@@ -4,8 +4,8 @@ import Mainpage from './mainpage'
 import contactPage from'./contact'
 import error from './404'
 import Shop from './shop'
-import { BrowserRouter as Router, Route, Switch, Link, Redirect } from 'react-router-dom';
-import { useEffect, useState, createContext} from "react";
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { useEffect} from "react";
 import { useLocation } from "react-router-dom";
 import CartContextProvider from "./Components/context";
 
