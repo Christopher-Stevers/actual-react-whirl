@@ -50,10 +50,10 @@
         display: flex;
         align-items: center;
         position: relative;
-        &:hover{background-color: $complement;
+        &:hover{background-color: $darkText;
             cursor: pointer;
         }
-           
+        svg:hover{fill:$lightText;}   
         
         }
         .cart{
@@ -61,7 +61,7 @@
         padding: 20px;
         height: 10vh;
         flex: 1;
-        &:hover{background-color: $complement;
+        &:hover{background-color: $darkText;
         }
         div{
         text-align: center;
