@@ -2,8 +2,8 @@
 .form{
     display: grid;
     min-height: 50vh;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 15vh .15fr .15fr .25fr ;
+    grid-template-columns: 1fr;
+    grid-template-rows: .15fr .15fr .25fr ;
     grid-template-areas:
     "a a"
     "b c"
@@ -23,17 +23,18 @@
             width: auto;
         }
     }
-    min-width: 50%;
+    width: 40%;
     
 }
 .flexChild{
     justify-self: start;
     font-size: 1.25rem;
-    flex: 1;
+    flex: 0;
     max-width: 50%;
 }
 .message{
     grid-area: e;
+    margin-bottom: 2.5vh;
 }
 
 

@@ -49,13 +49,15 @@ const toggle=()=>{isClosed?updateIsClosed(false): updateIsClosed(true)};
                 <Products price="24.00" nameDescription='Sausage' background={'https://cdn.discordapp.com/attachments/515323660962234381/637382179403595776/IMG_27611.JPG'} /></section>
         </div>
         <div className={style.shopContainer}>
-            <h2 className={style.h2}  id='Grains'> Grain Products</h2> <section className={style.section} >
+            <h2 className={style.h2}  id='Grains'> Grain</h2> <section className={style.section} >
             <Products price="4.19" nameDescription='Spelt' background={'https://cdn.discordapp.com/attachments/515323660962234381/637382179403595776/IMG_27611.JPG'} />
                 <Products price="4.00" nameDescription='Corn' background={'https://cdn.discordapp.com/attachments/515323660962234381/637382179403595776/IMG_27611.JPG'} />
                 
                 <Products price="4.00" nameDescription='Wheat' background={'https://cdn.discordapp.com/attachments/515323660962234381/637382179403595776/IMG_27611.JPG'} />
                 
-                <Products price="4.00" nameDescription='Soy Oil' background={'https://cdn.discordapp.com/attachments/515323660962234381/637382179403595776/IMG_27611.JPG'} /></section>
+                <Products price="4.00" nameDescription='Soy Oil' background={'https://cdn.discordapp.com/attachments/515323660962234381/637382179403595776/IMG_27611.JPG'} />
+                
+                <Products price="4.00" nameDescription='Wheat' background={'https://cdn.discordapp.com/attachments/515323660962234381/637382179403595776/IMG_27611.JPG'} /></section>
         </div>
         <Footer />
 

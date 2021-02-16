@@ -18,7 +18,7 @@
     flex-direction: row;
     width: 90%;
     margin: 10vh 5%;
-    justify-content: space-between;
+    justify-content: center;
     @media screen and(max-width: 500px){
        
     margin: 0 1% 0px 5%;
@@ -36,17 +36,16 @@
 .explainer{
     
     display: grid;
-    min-width: 700px;
+    min-width: 600px;
     min-height: 50vh;
-    max-width: 25%;
     flex: 1;
     grid-template-columns: 100%;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
     justify-content: space-between;
     font-size: 1.25rem;
     *{max-width: 90%;}
     
-    flex: 2;
+    flex: 1;
     @media screen and (max-width: 500px){
         display: block;
         margin: 0px;
@@ -56,7 +55,7 @@
 
 }
 .h2{
-    
+    margin:5vh  0px 0px 5% ;
     text-align: start;
     font-size: 3rem;
     font-weight: 400;

@@ -7,7 +7,6 @@ We offer both delivery and pickup options. Currently delivery is limited to Pert
 ` ;
 function Body() {
     return (<div className={style.body}>
-        <h2 className={style.h2}>Our Farm</h2>
         <article><p className={style.p}>
 
 <img className={style.img} src="https://cdn.discordapp.com/attachments/515327418366427136/799740846274510848/IMG_1861.JPG" alt='cow'></img>{text}</p></article>
