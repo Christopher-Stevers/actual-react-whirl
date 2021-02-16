@@ -14,9 +14,8 @@ function Product(props) {
     const { Cart } = useContext(CartContext);
     const [quantity, upDateQuantity] = useState(0);
 
-    const changeQuant = (e) => {
-
-            upDateQuantity(e.target.value);
+   /* const changeQuant = (e) => {
+        if(e){ upDateQuantity(e.target.value);
             Context.changeProduct(Cart.map((elem) => {
 
                 if (elem.type === props.nameDescription) {
@@ -27,11 +26,12 @@ function Product(props) {
                         quantity: e.target.value
                     }
                 }
-                else return null;
 
             }));
-        
-    }
+        }
+
+           
+    }*/
     const addFirstIngredient = () => {
         addIngredient();
 
@@ -101,8 +101,8 @@ function Product(props) {
     }
     return (<div className={style.growContainer}><div style={passedStyles} className={style.product}>
         <div className={style.data} ><div>{props.nameDescription}</div> </div>
-        <div className={style.data}>{props.price}</div>
-        <button onClick={(quantity === 0) ? addFirstIngredient : null} className={style.productButton}>{(quantity > 0) ? <span className={style.addContainer}><button onClick={addIngredient}>+</button><button onClick={removeIngredient}>-</button><input value={quantity}  onChange={changeQuant}></input></span> : "Add to Cart"}</button>
+        <div className={style.data}>${props.price}</div>
+        <button onClick={(quantity === 0) ? addFirstIngredient : null} className={style.productButton}>{(quantity > 0) ? <span className={style.addContainer}><button onClick={addIngredient}>+</button><button onClick={removeIngredient}>-</button><span >{quantity}</span></span> : "Add to Cart"}</button>
     </div></div>
     );
 }

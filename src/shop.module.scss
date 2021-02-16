@@ -2,6 +2,7 @@
 .section{
     display: flex;
     flex-wrap: wrap;
+    min-width: 100%;
    
 }
 .shopContainer{
@@ -12,7 +13,7 @@
     }
 }
 .grid{
-    display: inline-grid;
+    display: grid;
     grid-template-columns: 1fr;
     justify-content:  center;
     justify-items: center;
@@ -58,14 +59,22 @@
     display: block;
     }
 }
+.svgWrapper{height: 10vh;
+    width: 100%;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: auto;
+    justify-items: center;
+position: fixed;
+background-color: $darkText;}
+
 .h2{text-align: start;
     height: 10vh;
     font-size: 3rem;
     font-weight: 400;
     margin:5vh 5% 5vh 2.5%;
 }
-.svg{position: fixed;
-        display: grid;
-    width: 100%;
-    margin: 10px;
-justify-content: center;}
+.svg{
+        margin: auto;
+rect{fill: $lightText;}
+}

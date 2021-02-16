@@ -1,11 +1,11 @@
 @import'../App.scss';
 .form{
     display: grid;
-    width: 100%;
     min-height: 50vh;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: .15fr .15fr .15fr .25fr ;
-    grid-template-areas: "a a"
+    grid-template-rows: 15vh .15fr .15fr .25fr ;
+    grid-template-areas:
+    "a a"
     "b c"
     "d ."
     "e e"
@@ -30,6 +30,7 @@
     justify-self: start;
     font-size: 1.25rem;
     flex: 1;
+    max-width: 50%;
 }
 .message{
     grid-area: e;
@@ -44,6 +45,7 @@
 justify-content: space-between;
 padding-right: 25px;
 width: 100%;
+margin: 4px 0px;
 @media screen and (max-width: 500px){
     padding-right: 10px;
     width: 200px;
@@ -58,15 +60,20 @@ width: 100%;
     width: 75%;
     height: 200px;
     margin: 5px;
+    @media screen and (max-width: 500px) {
+        width: 100%;
+    }
 
 }
 .header{
     grid-area: a;
-    text-align: start;
-    font-size: 3rem;
-    font-weight: 400;
-    padding-top: 5vh;
-    padding-bottom: 5vh;
+    height: 15vh;
+    width: 100%;
+    @media screen and (max-width: 500px) {
+        height:0px;
+        width: 0px;
+        
+    }
 }
 .send{
     padding: 10px;

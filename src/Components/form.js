@@ -13,19 +13,19 @@ function Form() {
       }
     return (<div className={style.flexChild}>
             <form id="contact-form" className={style.form} onSubmit={sendEmail}>
-                <h1 className={style.header}>Email Us</h1>
+                <div className={style.header}></div>
             <div className={style.flexInput}>
                 <label>Name:</label><input type="text" name="user_name" id="user_name">
-               </input></div> <input type="hidden" name="contact_number"></input>
+               </input></div> <input type="hidden" name="contact_number" ></input>
             <div className={style.flexInput}>
                 <label>Email:</label>
-                <input type="email" name="from_email" id="user_email"/>
+                <input type="email" name="from_email" id="user_email" required/>
             </div>
             <div className={style.flexInput}><input type="hidden" name="contact_number" /> </div>
 
             <div className={style.message} >
                 <label className={style.innerMessage} >Message</label><br></br>
-                <textarea className={style.textArea} name="message" id="message"></textarea></div>
+                <textarea className={style.textArea} name="message" id="message" required></textarea></div>
             <input id="send" type="submit"  value="Send" className={style.send}></input>
 
         </form>
