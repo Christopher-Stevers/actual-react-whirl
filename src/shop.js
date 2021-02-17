@@ -1,4 +1,5 @@
 import Navbar from './Components/Navbar';
+import Sample from "./sampleImage.webp"
 import style from './shop.module.scss';
 import Products from './Components/products';
 import Header from './Components/Header';
@@ -34,30 +35,30 @@ const toggle=()=>{isClosed?updateIsClosed(false): updateIsClosed(true)};
         <div className={style.shopContainer}>
             <h2 className={style.h2} id='Beef'>Beef</h2>
             <section className={style.section} >
-                <Products price="4.19" nameDescription='Prime Rib Roast' background={'https://cdn.discordapp.com/attachments/515323660962234381/811399337547399198/WebsiteImage.png'} />
-                <Products price="4.00" nameDescription='Rump Roast' background={'https://cdn.discordapp.com/attachments/515323660962234381/811399337547399198/WebsiteImage.png'} />
-                <Products price="4.00" nameDescription='Ground Beef' background={'https://cdn.discordapp.com/attachments/515323660962234381/811399337547399198/WebsiteImage.png'} />
-                <Products price="7.00" nameDescription='T-Bone Steak' background={'https://cdn.discordapp.com/attachments/515323660962234381/811399337547399198/WebsiteImage.png'} />
-                <Products price="24.00" nameDescription='Wing Steak' background={'https://cdn.discordapp.com/attachments/515323660962234381/811399337547399198/WebsiteImage.png'} /></section>
+                <Products price="18.19" nameDescription='Prime Rib Roast' background={Sample} />
+                <Products price="6.99" nameDescription='Rump Roast' background={Sample} />
+                <Products price="4.99" nameDescription='Ground Beef' background={Sample} />
+                <Products price="15.99" nameDescription='T-Bone Steak' background={Sample} />
+                <Products price="7.99" nameDescription='Wing Steak' background={Sample} /></section>
         </div>
         <div className={style.shopContainer}>
             <h2 className={style.h2}  id='Pork'> Pork</h2> <section className={style.section} >
-            <Products price="4.19" nameDescription='Shoulder Roast' background={'https://cdn.discordapp.com/attachments/515323660962234381/811399337547399198/WebsiteImage.png'} />
-                <Products price="4.00" nameDescription='Pork Chop' background={'https://cdn.discordapp.com/attachments/515323660962234381/811399337547399198/WebsiteImage.png'} />
-                <Products price="4.00" nameDescription='Spare Ribs' background={'https://cdn.discordapp.com/attachments/515323660962234381/811399337547399198/WebsiteImage.png'} />
-                <Products price="7.00" nameDescription='Bacon' background={'https://cdn.discordapp.com/attachments/515323660962234381/811399337547399198/WebsiteImage.png'} />
-                <Products price="24.00" nameDescription='Sausage' background={'https://cdn.discordapp.com/attachments/515323660962234381/811399337547399198/WebsiteImage.png'} /></section>
+            <Products price="4.19" nameDescription='Shoulder Roast' background={Sample} />
+                <Products price="3.99" nameDescription='Pork Chop' background={Sample} />
+                <Products price="3.99" nameDescription='Spare Ribs' background={Sample} />
+                <Products price="7.99" nameDescription='Bacon' background={Sample} />
+                <Products price="5.99" nameDescription='Sausage' background={Sample} /></section>
         </div>
         <div className={style.shopContainer}>
             <h2 className={style.h2}  id='Grains'> Grain</h2> <section className={style.section} >
-            <Products price="4.19" nameDescription='Spelt' background={'https://cdn.discordapp.com/attachments/515323660962234381/811399337547399198/WebsiteImage.png'} />
-                <Products price="4.00" nameDescription='Corn' background={'https://cdn.discordapp.com/attachments/515323660962234381/811399337547399198/WebsiteImage.png'} />
+            <Products price="4.19" nameDescription='Spelt' background={Sample} />
+                <Products price="4.99" nameDescription='Corn' background={Sample} />
                 
-                <Products price="4.00" nameDescription='Wheat' background={'https://cdn.discordapp.com/attachments/515323660962234381/811399337547399198/WebsiteImage.png'} />
+                <Products price="4.89" nameDescription='Wheat' background={Sample} />
                 
-                <Products price="4.00" nameDescription='Soy Oil' background={'https://cdn.discordapp.com/attachments/515323660962234381/811399337547399198/WebsiteImage.png'} />
+                <Products price="5.99" nameDescription='Soy Oil' background={Sample} />
                 
-                <Products price="4.00" nameDescription='Wheat' background={'https://cdn.discordapp.com/attachments/515323660962234381/637382179403595776/IMG_27611.JPG'} /></section>
+                <Products price="1.99" nameDescription='Wheat' background={Sample} /></section>
         </div>
         <Footer />
 
