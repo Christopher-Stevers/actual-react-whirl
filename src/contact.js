@@ -12,7 +12,7 @@ function ContactPage() {
       <Navbar />
       <H2 h2="Contact Us"/>
       <div className={style.masterContainer}>
-        <div className={style.explainer}><div className={style.flexContainer} ><p>Phone:</p><p>555-393-6855</p></div><div className={style.flexContainer}><p>Email:</p><p>myemail.stevers@gmail.com</p></div><div className={style.flexContainer}><p>Address:</p><p>5555, Perth line 55<br /> R. R. 2  </p> <p> MyTown Ontario<br />N0K 1J0
+        <div className={style.explainer}><div className={style.flexContainer} ><p>Phone:</p><p>555-393-6855</p></div><div className={style.flexContainer}><p>Email:</p><p>myemail.stevers@gmail.com</p></div><div className={style.flexContainer}><p>Address:</p><p>5555, Perth line 55<br /> R. R. 2  <br/> MyTown Ontario<br />N0K 1J0
         </p></div></div>
         <Form /></div>
         <Footer />

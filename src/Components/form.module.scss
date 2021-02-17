@@ -2,8 +2,9 @@
 .form{
     display: grid;
     min-height: 50vh;
-    grid-template-columns: 1fr;
-    grid-template-rows: .15fr .15fr .25fr ;
+    
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: .15fr.15fr  .15fr .25fr ;
     grid-template-areas:
     "a a"
     "b c"
@@ -12,9 +13,7 @@
     "f f"
     "g ."
     ;
-    *{
-        margin-right: 20px;
-    }
+    
     @media screen and (max-width: 475px){
         display: block;
         margin: 0px;
@@ -23,14 +22,14 @@
             width: auto;
         }
     }
-    width: 40%;
     
 }
 .flexChild{
     justify-self: start;
     font-size: 1.25rem;
     flex: 0;
-    max-width: 50%;
+    max-width: 100%;
+    margin: 5vh 0px;
 }
 .message{
     grid-area: e;
@@ -45,22 +44,24 @@
 .flexInput{display: flex;
 justify-content: space-between;
 padding-right: 25px;
-width: 100%;
 margin: 4px 0px;
 @media screen and (max-width: 500px){
     padding-right: 10px;
-    width: 200px;
-    input{
-        width: 50%;
-    }
+    width: 220px;
     
-}}
+}
+    input{
+width: 30vw;
+max-width: 200px;
+    }
+label{margin-right: 5px;}}
 
 .textArea{
     border:1px solid $darkText;
     width: 75%;
     height: 200px;
     margin: 5px;
+    width: 100%;
     @media screen and (max-width: 500px) {
         width: 100%;
     }
