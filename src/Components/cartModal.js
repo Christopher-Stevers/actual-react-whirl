@@ -47,9 +47,9 @@ function Cart() {
         <form className={style.form}><ul className={style.ul}>
 
             {Cart.map(callBack)}</ul>
-            <input className={style.input} type="email" placeholder="myemail@myprovider.com"  onChange={setEmail} required></input>
-            <label className={style.label} >If you are happy with your order please place it and we will verify it via email and arrange delivery/pickup plans.</label>
-            <button name="buy" type="submit" className={style.buy} onClick={buy}>Place Order</button>
+            <input className={style.input} name="email" type="email" placeholder="myemail@myprovider.com"  onChange={setEmail} required></input>
+            <div className={style.label} for="email">If you are happy with your order please place it and we will verify it via email and arrange delivery/pickup plans.</div>
+            <button aria-label="buy" type="submit" className={style.buy} onClick={buy}>Place Order</button>
         </form>}</div></div>
     );
 }
