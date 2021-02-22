@@ -9,7 +9,7 @@ function Body() {
     return (<div className={style.body}>
         <article><p className={style.p}>
 
-<img className={style.img} src="https://cdn.discordapp.com/attachments/515327418366427136/799740846274510848/IMG_1861.JPG" alt='cow'></img>{text}</p></article>
+<img className={style.img} src="src\bodyImg.webp" alt='cow'></img>{text}</p></article>
         </div>
     );
   }
