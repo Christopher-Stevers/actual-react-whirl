@@ -19,8 +19,8 @@ justify-content:  center;
     background-size: contain;
     display: inline-grid;
     background-repeat: no-repeat;
-   box-shadow: 1px 1px 1px 1px $darkText,
-   inset 0px 0px 1px 1px $darkText;
+   box-shadow: 1px 1px 1px 1px $box-shadow
+   inset 0px 0px 1px 1px $box-shadow;
    border-radius:  1px;
     font-size: 1.25rem;
     }
