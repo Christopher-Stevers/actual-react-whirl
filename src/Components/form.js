@@ -15,16 +15,16 @@ function Form() {
             <form id="contact-form" className={style.form} onSubmit={sendEmail}>
                 
             <div className={style.flexInput}>
-                <label>Name:</label><input type="text" name="user_name" id="user_name">
+                <label for="user-name">Name:</label><input type="text" name="user_name" id="user_name">
                </input></div> <input type="hidden" name="contact_number" ></input>
             <div className={style.flexInput}>
-                <label>Email:</label>
+                <label for="from_email">Email:</label>
                 <input type="email" name="from_email" id="user_email" required/>
             </div>
             <input type="hidden" name="contact_number" /> 
 
             <div className={style.message} >
-                <label className={style.innerMessage} >Message</label><br></br>
+                <label className={style.innerMessage} for="message">Message</label><br></br>
                 <textarea className={style.textArea} name="message" id="message" required></textarea></div>
             <input id="send" type="submit"  value="Send" className={style.send}></input>
 
