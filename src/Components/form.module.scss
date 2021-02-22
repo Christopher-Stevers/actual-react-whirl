@@ -3,6 +3,11 @@
     display: grid;
     min-height: 50vh;
     
+    justify-self: start;
+    font-size: 1.25rem;
+    flex: 0;
+    max-width: 100%;
+    margin: 5vh 0px;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: .15fr.15fr  .15fr .25fr ;
     grid-template-areas:
@@ -24,13 +29,7 @@
     }
     
 }
-.flexChild{
-    justify-self: start;
-    font-size: 1.25rem;
-    flex: 0;
-    max-width: 100%;
-    margin: 5vh 0px;
-}
+
 .message{
     grid-area: e;
     margin-bottom: 2.5vh;

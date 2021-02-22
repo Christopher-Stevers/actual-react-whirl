@@ -3,7 +3,6 @@ import style from  './footer.module.scss';
 import { Link} from 'react-router-dom';
 function Footer() {
     return (
-      <div className={style.footwrapper}>
         <footer className={style.footerElem}>
           
         <Link  to="/">Home</Link>
@@ -11,7 +10,6 @@ function Footer() {
         <Link to="/shop" >Shop</Link>
         <div className={style.referal}>Designed by <a href='http://www.devstevers.tk/' className='footer'>CStevers Development</a>     <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div></div></footer>
         
-      </div>
     );
   }
   export default Footer;

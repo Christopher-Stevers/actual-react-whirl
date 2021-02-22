@@ -11,7 +11,7 @@ function Form() {
               console.log(error.text);
           });
       }
-    return (<div className={style.flexChild}>
+    return (
             <form id="contact-form" className={style.form} onSubmit={sendEmail}>
                 
             <div className={style.flexInput}>
@@ -29,7 +29,6 @@ function Form() {
             <input id="send" type="submit"  value="Send" className={style.send}></input>
 
         </form>
-    </div>
     );
 }
 export default Form;
