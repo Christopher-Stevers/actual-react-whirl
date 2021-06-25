@@ -9,6 +9,8 @@
 flex-grow: 1;
 display: flex;
 justify-content:  center;
+margin: 10px;
+
 }
 .product{
     align-content: end;
@@ -23,6 +25,10 @@ justify-content:  center;
    inset 0px 0px 1px 1px $box-shadow;
    border-radius:  1px;
     font-size: 1.25rem;
+    &:hover{transform: translateY(-5px);
+        transition-duration: .5s;
+        box-shadow: 0px 0px 2px 2px #aaa;
+    }
     }
 .data{
     width: 100%;

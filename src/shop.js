@@ -35,30 +35,31 @@ const toggle=()=>{isClosed?updateIsClosed(false): updateIsClosed(true)};
         <div className={style.shopContainer}>
             <h2 className={style.h2} id='Beef'>Beef</h2>
             <section className={style.section} >
-                <Products price="18.19" nameDescription='Prime Rib Roast' background={Sample} />
-                <Products price="6.99" nameDescription='Rump Roast' background={Sample} />
-                <Products price="4.99" nameDescription='Ground Beef' background={Sample} />
-                <Products price="15.99" nameDescription='T-Bone Steak' background={Sample} />
-                <Products price="7.99" nameDescription='Wing Steak' background={Sample} /></section>
+                <Products price="18.19" nameDescription='Rib Steak' background={"https://ik.imagekit.io/xqwrtgfm6ym/tr:w-400,h-300,c-force/IMG_3335_ne7F8o3F6.JPG"} />
+                <Products price="8.99" nameDescription='Blade Roast' background={"https://ik.imagekit.io/xqwrtgfm6ym/tr:w-400,h-300,c-force/IMG_3336_MAi6NDkkO.JPG"} />
+                <Products price="15.99" nameDescription='Sirloin Steak' background={"https://ik.imagekit.io/xqwrtgfm6ym/tr:w-400,h-300,c-force/IMG_3338_uRIJPixy3.JPG"} />
+                <Products price="4.99" nameDescription='Hamburgers' background={"https://ik.imagekit.io/xqwrtgfm6ym/tr:w-400,h-300,c-force/IMG_3337_T2B7EyFg5x.JPG"} />
+                </section>
         </div>
         <div className={style.shopContainer}>
-            <h2 className={style.h2}  id='Pork'> Pork</h2> <section className={style.section} >
-            <Products price="4.19" nameDescription='Shoulder Roast' background={Sample} />
-                <Products price="3.99" nameDescription='Pork Chop' background={Sample} />
-                <Products price="3.99" nameDescription='Spare Ribs' background={Sample} />
-                <Products price="7.99" nameDescription='Bacon' background={Sample} />
-                <Products price="5.99" nameDescription='Sausage' background={Sample} /></section>
+            <h2 className={style.h2}  id='Pork'> Pork</h2> <section className={style.section} > 
+                <Products price="6.99" nameDescription='Pork Chop' background={"https://ik.imagekit.io/xqwrtgfm6ym/tr:w-400,h-300,c-force/IMG_3339_Vby943vTx.JPG"} />
+                <Products price="12.99" nameDescription='Tenderloin' background={"https://ik.imagekit.io/xqwrtgfm6ym/tr:w-400,h-300,c-force/IMG_3332_zV9RTUdRvQ.JPG"} />
+                <Products price="4.39"nameDescription='Ground Pork' background={"https://ik.imagekit.io/xqwrtgfm6ym/tr:w-400,h-300,c-force/IMG_3330_pkp-Kcwhb.JPG"} />
+                <Products price="3.99" nameDescription='Spare Ribs' background={"https://ik.imagekit.io/xqwrtgfm6ym/tr:w-400,h-300,c-force/IMG_3331_m19ZL-qR_.JPG"} />
+                <Products price="7.99" nameDescription='Bacon' background={"https://ik.imagekit.io/xqwrtgfm6ym/tr:w-400,h-300,c-force/IMG_3331_m19ZL-qR_.JPG"} />
+                <Products price="4.99" nameDescription='Sausage' background={"https://ik.imagekit.io/xqwrtgfm6ym/tr:w-400,h-300,c-force/IMG_3333_RM_R1Fifn.JPG"} /></section>
         </div>
         <div className={style.shopContainer}>
             <h2 className={style.h2}  id='Grains'> Grain</h2> <section className={style.section} >
-            <Products price="4.19" nameDescription='Spelt' background={Sample} />
-                <Products price="4.99" nameDescription='Corn' background={Sample} />
+            <Products price=".39" nameDescription='Spelt' background={"https://ik.imagekit.io/xqwrtgfm6ym/tr:w-400,h-300,c-force/220px-2009-06-20_Silvolde_02_dinkel_GbTd2su1y1.jpg"} />
+                <Products price="0.30" nameDescription='Rye' background={"https://ik.imagekit.io/xqwrtgfm6ym/tr:w-400,h-300,c-force/rye_2_toeoXuK.jpg"} />
                 
-                <Products price="4.89" nameDescription='Wheat' background={Sample} />
+                <Products price="0.19" nameDescription='Wheat' background={"https://ik.imagekit.io/xqwrtgfm6ym/tr:w-400,h-300,c-force/external-content.duckduckgo.com_uOlHvG5mE8.jpg"} />
                 
-                <Products price="5.99" nameDescription='Soy Oil' background={Sample} />
+                <Products price=".18" nameDescription='Corn' background={"https://ik.imagekit.io/xqwrtgfm6ym/tr:w-400,h-300,c-force/image_preview_7-Gpxb9r0.jpg"} />
                 
-                <Products price="1.99" nameDescription='Wheat' background={Sample} /></section>
+                </section>
         </div>
         <Footer />
 
