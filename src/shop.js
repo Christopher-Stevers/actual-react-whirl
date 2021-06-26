@@ -1,5 +1,5 @@
 import Navbar from './Components/Navbar';
-import Sample from "./sampleImage.webp"
+
 import style from './shop.module.scss';
 import Products from './Components/products';
 import Header from './Components/Header';
