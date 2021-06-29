@@ -55,7 +55,7 @@
     line-height: 10vh;
         display: none;
     text-align: center;
-    color:$lightText;
+    color:$complement;
     background-color: $darkText;
     text-decoration: none;
     font-size: 2rem;
@@ -80,5 +80,5 @@ background-color: $darkText;}
 }
 .svg{
         margin: auto;
-rect{fill: $lightText;}
+rect{fill: $complement;}
 }

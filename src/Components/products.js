@@ -101,7 +101,7 @@ function Product(props) {
     }
     return (<div className={style.growContainer}><div style={passedStyles} className={style.product}>
         <div className={style.data} ><div>{props.nameDescription}</div> </div>
-        <div className={style.data}>${props.price}</div>
+        <div className={style.data}>${props.price}/lb.</div>
         <button onClick={(quantity === 0) ? addFirstIngredient : null} className={style.productButton}>{(quantity > 0) ? <span className={style.addContainer}><button onClick={addIngredient}>+</button><button onClick={removeIngredient}>-</button><span >{quantity}</span></span> : "Add to Cart"}</button>
     </div></div>
     );

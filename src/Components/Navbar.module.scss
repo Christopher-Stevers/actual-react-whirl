@@ -58,8 +58,9 @@
         }
         .cart{
         background-color: $lightMain;
-        padding: 20px;
+        padding: 10px;
         height: 10vh;
+        max-height: 10vh;
         flex: 1;
         &:hover{background-color: $darkText;
         }
