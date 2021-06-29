@@ -1,9 +1,4 @@
-$darkText: #121418;
-$main: #1d3014;
-$lightMain: #70b64f;
-$lightText:#e2f9cd;
-$complement: #985e46;
-$box-shadow: #777777;
+@import './scssvars.scss';
 *{
     box-sizing: border-box;
     outline: 0px;
@@ -16,7 +11,8 @@ $box-shadow: #777777;
 }
 body{
     overflow: scroll;
-    color:inherit;
+    background-color: rgb(255, 253, 251);
+    color: inherit;
 }
 html{
     scroll-padding-top: 20vh;

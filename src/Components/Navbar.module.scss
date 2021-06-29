@@ -1,5 +1,5 @@
 
-@import'../App.scss';
+@import'../scssvars.scss';
 
 
 .wrapper{
@@ -53,7 +53,7 @@
         &:hover{background-color: $darkText;
             cursor: pointer;
         }
-        svg:hover{fill:$lightText;}   
+        svg:hover{fill:$complement;}   
         
         }
         .cart{
