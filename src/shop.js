@@ -38,7 +38,7 @@ const toggle=()=>{isClosed?updateIsClosed(false): updateIsClosed(true)};
                 <Products price="18.19" nameDescription='Rib Steak' background={"https://ik.imagekit.io/xqwrtgfm6ym/tr:w-400,h-300,c-force/IMG_3335_ne7F8o3F6.JPG"} />
                 <Products price="8.99" nameDescription='Blade Roast' background={"https://ik.imagekit.io/xqwrtgfm6ym/tr:w-400,h-300,c-force/IMG_3336_MAi6NDkkO.JPG"} />
                 <Products price="15.99" nameDescription='Sirloin Steak' background={"https://ik.imagekit.io/xqwrtgfm6ym/tr:w-400,h-300,c-force/IMG_3338_uRIJPixy3.JPG"} />
-                <Products price="4.99" nameDescription='Hamburgers' background={"https://ik.imagekit.io/xqwrtgfm6ym/tr:w-400,h-300,c-force/IMG_3337_T2B7EyFg5x.JPG"} />
+                <Products price="4.99" nameDescription='Hamburger Patties' background={"https://ik.imagekit.io/xqwrtgfm6ym/tr:w-400,h-300,c-force/IMG_3337_T2B7EyFg5x.JPG"} />
                 </section>
         </div>
         <div className={style.shopContainer}>
