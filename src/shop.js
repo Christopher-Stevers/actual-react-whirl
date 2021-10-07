@@ -7,14 +7,11 @@ import navbarStyle from './Components/Navbar.module.scss';
 import Footer from './Components/footer'
 import { useState } from 'react';
 function Shop() {
-const [isSmoll]=useState(window.matchMedia("(max-width: 500px)").matches);
 window.addEventListener("resize",function(e){if(window.matchMedia("(max-width: 500px)").matches){
     updateIsClosed(true);
-    console.log(window.matchMedia("(max-width: 500px)").matches)
 }
 });
 const [isClosed, updateIsClosed]=useState(true);
-console.log(isSmoll);
 
 const toggle=()=>{isClosed?updateIsClosed(false): updateIsClosed(true)};
     

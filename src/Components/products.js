@@ -41,7 +41,6 @@ function Product(props) {
     }
     const addIngredient = () => {
         if (quantity < 1) {
-            console.log(quantity);
             Context.changeProduct([...Cart, {
                 type: props.nameDescription,
                 price: props.price,
@@ -68,7 +67,6 @@ function Product(props) {
                 })
             )
         }
-        console.log(Cart);
         upDateQuantity(quantity + 1);
 
 
