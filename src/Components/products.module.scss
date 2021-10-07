@@ -66,8 +66,9 @@ margin: 10px;
         transition-duration: .2s;
         height: 32px;
         border: solid $box-shadow 3px;
+        transform: scale(1.05);
         &:hover{
-            transform: scale(1.05);
+            transform: scale(1.1);
         background-color: #dddddd;
     border-color: #444444}
     }
