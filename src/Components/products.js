@@ -1,6 +1,6 @@
 
 import style from './products.module.scss';
-import React, { useContext } from 'react'
+import React, { useContext, useEffect } from 'react'
 import { CartContext } from './context';
 import { v4 as uuidv4 } from 'uuid';
 
@@ -13,6 +13,8 @@ function Product(props) {
     const Context = useContext(CartContext);
     const { Cart } = useContext(CartContext);
     const [quantity, upDateQuantity] = useState(0);
+    useEffect(()=>{
+        if(!Context.Cart[0])upDateQuantity(0);},[Context])
 
    /* const changeQuant = (e) => {
         if(e){ upDateQuantity(e.target.value);
