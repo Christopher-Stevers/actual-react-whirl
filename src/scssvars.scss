@@ -4,3 +4,20 @@ $lightMain: #8bca67;
 $lightText:#272925;
 $complement: #f9d976;
 $box-shadow: #777777;
+@mixin breakpoint($point) {
+    @if $point ==large {
+        @media only screen and (max-width:1366px) {
+            @content;
+        }
+    }
+    @else if $point == desktop {
+        @media only screen and (max-width: 1024px){
+            @content;
+        }
+    }
+    @else if $point == phone {
+        @media only screen and (max-width: 500px) {
+            @content;
+        }
+    }
+}

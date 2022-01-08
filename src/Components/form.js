@@ -8,7 +8,6 @@ function Form() {
           .then((result) => {
               alert("Your Message has been sent.");
           }, (error) => {
-              console.log(error.text);
           });
       }
     return (

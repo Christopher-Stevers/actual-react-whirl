@@ -1,4 +1,6 @@
 
+@import'./scssvars.scss';
+
 .flexContainer{
     display: flex;
     width: 90vw;
@@ -6,7 +8,7 @@
     justify-content: space-between;
     max-width: 320px;
     
-    @media screen and(max-width: 500px){
+    @include breakpoint(phone){
        
         max-width: 100%;
     }
@@ -16,7 +18,7 @@
 
 
     margin: 0 10%;
-    @media screen and(max-width: 500px){
+    @include breakpoint(phone){
         max-width: 100%;
        
     margin: 0 1% 0px 5%;}
@@ -48,7 +50,7 @@
     //*{max-width: 90%;}
     
     flex: 1;
-    @media screen and (max-width: 500px){
+    @include breakpoint(phone){
         display: block;
         margin: 0px;
     }
